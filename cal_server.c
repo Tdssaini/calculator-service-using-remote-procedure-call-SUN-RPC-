@@ -2,14 +2,17 @@
 int isprime(int a){
 	int i;
 	for(i=2;i<=a/2;i++) {
-		if(a%i==0){break;}
+		if(a%i==0)
+		{
+			break;
+		}
 	}
 	if(i==a/2+1) {
-		printf("\nYES\n");
+		printf("YES\n");
 		return 1;
 	}
 	else {
-		printf("\nNO\n");
+		printf("NO\n");
 		return 0;
 	}
 }
